@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1{
+    @apply text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] xl:text-[64px] font-black leading-[60px] md:leading-[86px];
+}
+h2{
+    @apply text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px] font-black;
+}
+h3{
+    @apply text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] font-black;
+}
+h4{
+    @apply text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[24px];
+}
+h5{
+    @apply text-[16px] sm:text-[18px] md:text-[20px] lg:text-[20px] xl:text-[20px];
+}
+h6{
+    @apply text-[14px] sm:text-[16px] md:text-[18px] lg:text-[18px] xl:text-[18px];
+}
+p{
+    @apply text-[14px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[16px];
+}
+nav li{
+    @apply p-[18px] sm:p-[10px] md:p-[18px] mr-3 border-[1px] border-[#030712] border-opacity-10 rounded-[50px] bg-[#12132d] bg-opacity-5 shadow-md hover:shadow-xl hover:bg-opacity-10 active:shadow-inner cursor-pointer;
+}
+.btn-primary{
+    @apply bg-[#797DFC] rounded-[50px] text-white text-[20px] font-bold;
+}
