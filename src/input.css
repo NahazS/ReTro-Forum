@@ -27,5 +27,5 @@ nav li{
     @apply p-[18px] sm:p-[10px] md:p-[18px] mr-3 border-[1px] border-[#030712] border-opacity-10 rounded-[50px] bg-[#12132d] bg-opacity-5 shadow-md hover:shadow-xl hover:bg-opacity-10 active:shadow-inner cursor-pointer;
 }
 .btn-primary{
-    @apply bg-[#797DFC] rounded-[50px] text-white text-[20px] font-bold;
+    @apply bg-[#797DFC] rounded-[50px] text-white text-[20px] font-bold shadow-md hover:bg-opacity-50 hover:shadow-2xl active:shadow-inner;
 }

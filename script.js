@@ -31,7 +31,7 @@ const showPost = (data) => {
               <div class="flex flex-col sm:flex-row bg-[#F3F3F5] rounded-[24px] p-[10px] md:p-[20px] lg:p-[40px] mb-6 shadow-sm hover:shadow-lg hover:border-[1px] hover:border-[#797DFC]">
                       <div class="relative w-fit mr-[24px]">
                           <img class="w-[72px] h-[72px] rounded-[16px]" src=${post.image} alt="">
-                          <div class="w-[18px] h-[18px] border-[3px] border-white rounded-[50%] bg-[${post.isActive ? '#10B981' : '#FF3434'}] absolute top-[-4px] right-0"></div>
+                          <div class="w-[18px] h-[18px] border-[3px] border-white rounded-[50%] ${post.isActive ? 'bg-green-500' : 'bg-red-500'} absolute top-[-4px] right-0"></div>
                       </div>
                       <div class="w-full">
                           <div class="flex gap-x-5 text-[#12132d] text-opacity-80 mb-3">
