@@ -79,7 +79,12 @@ function search()
     const search_text = document.getElementById('search_text');
     const show_post = document.getElementById('show_post');
     show_post.textContent = '';
-    loadData(`posts?category=${search_text.value}`);
+    if(search_text.value.toLowerCase() === "all" || search_text.value.toLowerCase() === "all post"){
+      loadData("posts")
+    }else{
+      loadData(`posts?category=${search_text.value.toLowerCase()}`);
+    }
+    search_text.value = '';
     console.log(search_text.value)
 
 }
@@ -138,4 +143,10 @@ const showLatest = (data) => {
     }))
 }
 
-
+window.addEventListener("load", ()=>{
+  document.getElementById('loading');
+  loading.style.display = "none";
+  document.querySelector('header').classList.remove('hidden');
+  document.querySelector('main').classList.remove('hidden');
+  document.querySelector('footer').classList.remove('hidden');
+})

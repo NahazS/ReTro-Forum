@@ -9,7 +9,9 @@
 </head>
 
 <body class="font-Mulish">
-    <header class="max-w-[1170px] px-5 xl:px-0 mx-auto mt-[55px]">
+    <div id="loading" class="bg-custom-gradient" style="width: 100%; height: 100vh; position: fixed; background-image: url('./image/loading.gif'); background-repeat: no-repeat; background-position: center;">
+    </div>
+    <header class="max-w-[1170px] px-5 xl:px-0 mx-auto mt-[55px] hidden">
         <nav class="flex flex-col md:flex-row text-center md:justify-between">
             <h3><span class="text-[36px]">ReTro</span></h3>
             <div class="flex mx-auto md:mx-0 items-center">
@@ -90,7 +92,8 @@
             </div>
         </div>
     </header>
-    <main>
+    
+    <main class="hidden">
         <section class="mt-[100px] text-center">
             <h2>Let’s Discuss</h2>
             <h6 class="text-[#12132d] text-opacity-60">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</h6>
@@ -142,7 +145,7 @@
                 
         </section>
     </main>
-    <footer class="text-center bg-custom-gradient min-h-[489px] content-center mt-[100px]">
+    <footer class="text-center bg-custom-gradient min-h-[489px] content-center mt-[100px] hidden">
         <h3 class="font-extrabold mb-4">ReTro</h3>
         <p class="mb-8">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a <br> piece of classical Latin literature from 45 BC</p>
         <p class="flex  justify-center mb-12"><svg xmlns="http://www.w3.org/2000/svg" width="175" height="24" viewBox="0 0 175 24" fill="none">
