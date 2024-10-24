@@ -69,7 +69,6 @@ const showPost = (data) => {
                           </div>
                       </div>
                       </div>
-
           `;
     });
     dataLoading(false);
@@ -92,8 +91,12 @@ function search()
 function dataLoading(isLoad) {
   const data_loading = document.getElementById('data_loading');
   if(isLoad)
-    data_loading.classList.remove = "hidden";
-    
+  {
+    data_loading.classList.remove("hidden");
+  } else
+  {
+    data_loading.classList.add("hidden");
+  }
 }
 function addTitle(title, viewCount){
     const read_count = document.getElementById('read_count');
