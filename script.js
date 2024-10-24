@@ -71,11 +71,12 @@ const showPost = (data) => {
                       </div>
 
           `;
-        
     });
+    dataLoading(false);
 };
 function search()
 {
+    dataLoading(true);
     const search_text = document.getElementById('search_text');
     const show_post = document.getElementById('show_post');
     show_post.textContent = '';
@@ -87,6 +88,12 @@ function search()
     search_text.value = '';
     console.log(search_text.value)
 
+}
+function dataLoading(isLoad) {
+  const data_loading = document.getElementById('data_loading');
+  if(isLoad)
+    data_loading.classList.remove = "hidden";
+    
 }
 function addTitle(title, viewCount){
     const read_count = document.getElementById('read_count');
